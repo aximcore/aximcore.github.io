@@ -1,0 +1,97 @@
+body{
+	background-image: url("elso.png");
+	background-repeat: no-repeat;
+	background-size: 100% 800px;
+	background-position: top;
+	background-color: #222222;
+	color: #fff;
+	font-size: 16px;
+	font-family:Arial Black;
+	margin: 0;
+}
+
+nav{
+	word-spacing: 30px;
+	margin-right: 100px;
+	text-align: right;
+}
+
+img{
+	opacity: 0.4;
+}
+
+img:hover{
+	opacity: 1;
+}
+
+/* unvisited link */
+a:link {
+    color: #FFD373;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #FFB000;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FFC440;
+}
+
+h2{
+	font-style: oblique;
+	font-size: 160%;
+}
+
+p#idezet{
+	font-style: oblique;
+	text-align: center;
+	margin-top: 100px;
+	font-family:Arial Black;
+    font-size:180%
+}
+
+#content{
+	border: solid 0px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	margin: 0 auto;
+	margin-top: 230px;
+    width: 100%;
+    height: 100%;
+	background: #333333;
+	color: #fff;
+}
+
+.hentry{
+	text-align: center;
+	padding-right: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	/*float: left;*/
+	width: 500px;
+}
+
+#nyil{
+	width: 400px;
+	/*border-bottom: solid 10px; 
+	border-radius: 20px;*/
+	font-size: 40px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.logo{
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p#keszitette{
+	padding-left: 40px;
+	margin-top: 200px;
+	text-align: center;
+}
