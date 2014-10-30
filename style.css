@@ -1,9 +1,17 @@
 body{
-	background-image: url("elso.png");
+	/*background-image: url("elso.png");
 	background-repeat: no-repeat;
-	background-size: 100% 800px;
+	background-size: auto;
 	background-position: top;
-	background-color: #222222;
+	background-color: #222222;*/
+
+	background: url('elso.png') no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #222222;
+
 	color: #fff;
 	font-size: 16px;
 	font-family:Arial Black;
@@ -63,6 +71,7 @@ p#idezet{
     height: 100%;
 	background: #333333;
 	color: #fff;
+	opacity: 0.9;
 }
 
 .hentry{
