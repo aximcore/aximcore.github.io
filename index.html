@@ -1,6 +1,29 @@
  <!doctype html>
 
 <html lang="hu">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $("#up").click(function (){
+                //$(this).animate(function(){
+                    $('html, body').animate({
+                        scrollTop: $("#n").offset().top
+                    }, 1000);
+                //});
+            });
+
+            $("#down").click(function (){
+                //$(this).animate(function(){
+                    $('html, body').animate({
+                        scrollTop: $("#content").offset().top
+                    }, 1000);
+                //});
+            });
+
+        });
+    </script>
+
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
   	<meta charset="utf-8">
@@ -8,7 +31,7 @@
 </head>
 
 <header>
-	<nav>
+	<nav id="n">
 		<ul>
 		<a href="#">home</a>
 		<a href="#content">portfolio</a>
@@ -17,8 +40,22 @@
 		</ul>
 	</nav>
 <p id="idezet">Az összevisszaságban találd meg az egyszerűséget,<br> a hangzavarban a harmóniát. A nehézségek közt mindig ott van a lehetőség.<br> &mdash; Albert Einstein</p>
-<div id="nyil" style="margin-top: 190px;"><a href="#content">&#65516;</a></div>
+<div id="nyil" style="margin-top: 190px;"><button id="down">&#8659;</button></div>
 </header>
+<!--<aside id="featured" class="body"><article>
+	<figure>
+		<img src="logos/GitHub_Logo.png" alt="Smashing Magazine" />
+	</figure>
+	<hgroup>
+ 
+		<h2>Featured Article</h2>
+		<h3><a href="#">HTML5 in Smashing Magazine!</a></h3>
+	</hgroup>
+	<p>Discover how to use Graceful Degradation and Progressive Enhancement techniques to achieve an outstanding, cross-browser <a href="http://dev.w3.org/html5/spec/Overview.html" rel="external">HTML5</a> and <a href="http://www.w3.org/TR/css3-roadmap/" rel="external">CSS3</a> website today!</p>
+ 
+</article></aside> --><!-- /#featured --> 
+
+
 
 <section id="content" class="body">
 	<div id="nyil">°</div>
@@ -58,9 +95,9 @@
 				</p>
 			</div><!-- /.entry-content -->
 		</article>
-
-		<p style="text-align:right; margin-right: 200px"><a href="#">top</a></p>
-		
+		<article class="hentry" style="margin-top:60px;">
+		<button id="up">&#8657;</button>
+		</article>
 
 	</ol><!-- /#posts-list -->
 
