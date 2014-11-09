@@ -10,8 +10,11 @@
 
         	function resize(){
         		var h = window.innerHeight;
+
+        		if ( h >= 700 ){
         		document.getElementById("idezet").style.marginTop = (( h / 2 ) - 30 /* nav miatt */ ) + "px";
         		document.getElementById("idezet").style.marginBottom = (h - 600) + "px";
+        	}
         	}
         	resize();
             window.onresize = function() {
