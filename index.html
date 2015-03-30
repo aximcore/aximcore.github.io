@@ -1,138 +1,17 @@
- <!doctype html>
-
-<html lang="hu">
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-    <script>
-    	
-
-        $(document).ready(function (){
-
-        	function resize(){
-        		var h = window.innerHeight;
-
-        		if ( h >= 600 ){
-        		document.getElementById("idezet").style.marginTop = (( h / 2 ) - 30 /* nav miatt */ ) + "px";
-        		document.getElementById("idezet").style.marginBottom = (h - h/2) + "px";
-        	}
-        	}
-        	resize();
-            window.onresize = function() {
-                resize();
-            };
-
-            $("#up").click(function (){
-                //$(this).animate(function(){
-                    $('html, body').animate({
-                        scrollTop: $("#n").offset().top
-                    }, 1000);
-                //});
-            });
-
-            $("#down").click(function (){
-                //$(this).animate(function(){
-                    $('html, body').animate({
-                        scrollTop: $("#content").offset().top
-                    }, 1000);
-                //});
-            });
-
-        });
-    </script>
-
+<!DOCTYPE html>
+<html>
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css">
-  	<meta charset="utf-8">
-  	<title>AximCore WebSite</title>
+	<title></title>
+    <style>
+        body div {
+            text-align: center;
+            font-size: 90px;
+            margin: 0 auto;
+            margin-top: 50%;
+        }
+    </style>
 </head>
-
-<header>
-	<nav id="n">
-		<ul>
-		<a href="#">home</a>
-		<a href="#content">portfolio</a>
-		<a href="#">blog</a>
-		<a href="#contact">contact</a>
-		</ul>
-	</nav>
-<p id="idezet">Az összevisszaságban találd meg az egyszerűséget,<br> a hangzavarban a harmóniát. A nehézségek közt mindig ott van a lehetőség.<br> &mdash; Albert Einstein<br><button id="down">&#8659;</button></p>
-<!--<div id="nyil" style="margin-top:0px;"><button id="down">&#8659;</button></div> -->
-</header>
-<!--<aside id="featured" class="body"><article>
-	<figure>
-		<img src="logos/GitHub_Logo.png" alt="Smashing Magazine" />
-	</figure>
-	<hgroup>
- 
-		<h2>Featured Article</h2>
-		<h3><a href="#">HTML5 in Smashing Magazine!</a></h3>
-	</hgroup>
-	<p>Discover how to use Graceful Degradation and Progressive Enhancement techniques to achieve an outstanding, cross-browser <a href="http://dev.w3.org/html5/spec/Overview.html" rel="external">HTML5</a> and <a href="http://www.w3.org/TR/css3-roadmap/" rel="external">CSS3</a> website today!</p>
- 
-</article></aside> --><!-- /#featured --> 
-
-
-
-<section id="content" class="body">
-	<div id="nyil">°</div>
- 
-	<ol id="posts-list" class="hfeed">
- 
-		<article class="hentry">	
-			<header>
-				<h2 class="entry-title" style="padding-top:30px;">Üdvözöllek az oldalamon</h2>
-			</header>
- 
-			<div class="entry-content">
-				<p>Egy pár szó rólam, 20 éves vagyok jelenleg programtervező informatikusként tanulok a Debreceni Egyetemen. Informatikával komolyabban középiskolás koromba kezdtem el foglalkozni, ekkor autodidakta módon tanultam a C\C++ programozás nyelvet és linux rendszerek működését. Folyt.köv....</p>
-			</div><!-- /.entry-content -->
-		</article>
-
-		<article class="hentry">	
-			<header>
-				<h2 class="entry-title">Programozási/szakmai ismeretek</h2>
-			</header>
- 
-			<div class="entry-content">
-				<p>C\C++, Java, OpenGL, Qt, SQL, XML\XPath\DTD, HTML\CSS, <a href="https://developers.google.com/protocol-buffers/">Google Protocol Buffers</a>, <a href="http://en.wikipedia.org/wiki/Lexical_analysis">Lexer\Lexical analyzer</a><a href="http://en.wikipedia.org/wiki/Flex_lexical_analyser"> (Flex)</a>, Linux rendszerek.</p>
-			</div><!-- /.entry-content -->
-		</article>
-
-		<article class="hentry">	
-			<header>
-				<h2 class="entry-title" id="contact">Elérhetőségeim</h2>
-			</header>
- 
-			<div class="entry-content">
-				<p>
-					Email: aximcore[Kukac]gmail.com<br>
-					Skype: aximcore<br>
-					GitHub: <a href="http://github.com/aximcore">aximcore</a><br>
-				</p>
-			</div><!-- /.entry-content -->
-		</article>
-		<article class="hentry" style="margin-top:60px;">
-		<button id="up">&#8657;</button>
-		</article>
-
-	</ol><!-- /#posts-list -->
-
-	<footer>
-
-		<p id="keszitette">COPYRIGHT © 2014 Tóth Máté</p>
-		<!--<p>valami</p>
-		<div class="logo">
-		<img src="logos/GitHub_Logo.png" alt="GitHub" style="width:200px;" />
-		<img src="logos/Chakra-shiny.svg.png" alt="Chakra OS" style="width:50px; padding-bottom:10px;" />
-		<img src="logos/logo-ubuntu_su-white_orange-hex.svg" alt="Ubuntu server" style="width:150px; padding-bottom:0px;" />
-		<img src="logos/feather.png" alt="Apache" style="width:150px; padding-bottom:10px;" />
-		<img src="logos/Android_Robot_200.png" alt="Android" style="width:80px; padding-bottom:10px;" />
-		 -->
-		
-		</div>
-	</footer>
- 
-</section><!-- /#content -->
-
-
+<body>
+    <div>404</div>
+</body>
 </html>
